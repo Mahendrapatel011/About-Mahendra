@@ -25,10 +25,16 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import manifest from "./company/manifest.png";
+import amenses from "./company/amenses.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import brickvio from "./brickvio.png";
+import luctur from "./luctur.png";
+import erranddo from "./erranddo.png";
+import profile from "./profile.png";
 
 export {
   logo,
@@ -56,7 +62,13 @@ export {
   shopify,
   starbucks,
   tesla,
+  manifest,
+  amenses,
   carrent,
   jobit,
   tripguide,
+  brickvio,
+  luctur,
+  erranddo,
+  profile,
 };

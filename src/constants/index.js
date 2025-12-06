@@ -19,9 +19,14 @@ import {
   starbucks,
   tesla,
   shopify,
+  manifest,
+  amenses,
   carrent,
   jobit,
   tripguide,
+  brickvio,
+  luctur,
+  erranddo,
   threejs,
 } from "../assets";
 
@@ -116,55 +121,35 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer (MERN & DevOps)",
+    company_name: "Manifest Infotech Pvt Ltd",
+    icon: manifest,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained full-stack web applications using MERN stack (MongoDB, Express.js, React.js, Node.js).",
+      "Implemented RESTful APIs and GraphQL endpoints for efficient data management and communication.",
+      "Set up and managed CI/CD pipelines using Jenkins, GitHub Actions, and Docker for automated deployments.",
+      "Configured and maintained cloud infrastructure on AWS/Azure including EC2, S3, Lambda, and CloudFront.",
+      "Optimized application performance, reduced load times, and improved database query efficiency.",
+      "Collaborated with cross-functional teams to deliver scalable and high-performance solutions.",
+      "Implemented DevOps best practices including containerization, orchestration, and monitoring solutions.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Frontend Developer",
+    company_name: "Amenses Innovation Pvt Ltd, Indore, MP",
+    icon: amenses,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2021 - 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed responsive and interactive user interfaces using React.js, JavaScript, HTML5, and CSS3.",
+      "Implemented modern UI/UX designs and ensured cross-browser compatibility for web applications.",
+      "Worked with state management libraries like Redux and Context API for efficient data flow.",
+      "Collaborated with backend developers to integrate RESTful APIs and ensure seamless data communication.",
+      "Optimized frontend performance, improved page load times, and enhanced user experience.",
+      "Participated in code reviews, debugging, and maintaining clean, reusable component architecture.",
+      "Worked with version control systems (Git) and followed agile development methodologies.",
     ],
   },
 ];
@@ -198,67 +183,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "BrickVio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A comprehensive real estate web platform that allows users to search, browse, and manage property listings. Features include property search filters, detailed listings, user authentication, and seamless property management for buyers and sellers.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "postgresql",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: brickvio,
+    source_code_link: "https://brickvio.com",
   },
   {
-    name: "Job IT",
+    name: "Luctur",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A YouTube clone platform built with MERN stack featuring video upload, streaming, user channels, comments, likes, and subscriptions. Includes responsive design, video recommendations, and real-time interactions for an engaging video-sharing experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "postgresql",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: luctur,
+    source_code_link: "https://luctur.com",
   },
   {
-    name: "Trip Guide",
+    name: "ErrandDo",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A service marketplace platform similar to Urban Company, connecting service providers with customers. Features include service booking, real-time tracking, payment integration, ratings and reviews, and a comprehensive admin dashboard for managing services and users.",
     tags: [
       {
-        name: "nextjs",
+        name: "mern",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "devops",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: erranddo,
+    source_code_link: "https://erranddo.com",
   },
 ];
 

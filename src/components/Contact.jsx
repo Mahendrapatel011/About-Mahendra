@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Notification from "./Notification";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,6 +17,11 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState({
+    isVisible: false,
+    message: "",
+    type: "success",
+  });
 
   const handleChange = (e) => {
     const { target } = e;
@@ -37,9 +43,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Mahendra",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "mahendrapatel02220@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -47,7 +53,11 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setNotification({
+            isVisible: true,
+            message: "Thank you! I will get back to you as soon as possible.",
+            type: "success",
+          });
 
           setForm({
             name: "",
@@ -59,15 +69,30 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          setNotification({
+            isVisible: true,
+            message: "Something went wrong. Please try again.",
+            type: "error",
+          });
         }
       );
   };
 
+  const closeNotification = () => {
+    setNotification({ ...notification, isVisible: false });
+  };
+
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <>
+      <Notification
+        message={notification.message}
+        type={notification.type}
+        isVisible={notification.isVisible}
+        onClose={closeNotification}
+      />
+      <div
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -130,6 +155,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+    </>
   );
 };
 
